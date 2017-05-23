@@ -10,7 +10,7 @@ public class Battery extends AbstractDevice implements Device {
 
 
     public int getIn() {
-
+        return 0;
     }
 
 
@@ -57,6 +57,4 @@ public class Battery extends AbstractDevice implements Device {
     public void setType(String type) {
 
     }
-}
-
 }

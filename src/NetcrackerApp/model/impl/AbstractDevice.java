@@ -34,22 +34,18 @@ public abstract class AbstractDevice implements Device {
 
 
     public void setIn(int in) {
-        if (in < 0 & in > 0) {
-
+        if (in == 0) {
             System.out.println("Введите новое значение");
             Scanner num = new Scanner(System.in);
             in = num.nextInt();
-
             if (in <= 0) {
                 System.err.println("Введено недопустимое значение");
             }
-        }
-
-        else {
-
             this.in = in;
         }
-
+        else {
+            this.in = in;
+        }
     }
 
 

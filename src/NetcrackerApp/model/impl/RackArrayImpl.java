@@ -4,33 +4,33 @@ import NetcrackerApp.model.Device;
 import NetcrackerApp.model.Rack;
 
 public class RackArrayImpl implements Rack{
+    private int size;
+    private int freesize;
 
-    @Override
+    public RackArrayImpl(int size) {
+        this.size = size;
+    }
+
     public int getSize() {
-        return 0;
+        return size;
     }
 
-    @Override
     public int getFreeSize() {
-        return 0;
+        return freesize;
     }
 
-    @Override
     public Device getDevAtSlot(int index) {
         return null;
     }
 
-    @Override
     public boolean insertDevToSlot(Device device, int index) {
         return false;
     }
 
-    @Override
     public Device removeDevFromSlot(int index) {
         return null;
     }
 
-    @Override
     public Device getDevByIN(int in) {
         return null;
     }
